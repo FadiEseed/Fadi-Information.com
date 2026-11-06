@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>لوحة التحكم | سَنَد</title>
+<meta name="description" content="سيرفر GSM لفنيي الصيانة: كريدت أدوات، تفعيلات، فك شبكة وفحوصات IMEI، مع دعم فني عربي على الواتساب واسترجاع تلقائي للطلبات المرفوضة.">
+<link rel="icon" href="assets/sanad-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/sanad.css">
+<script src="assets/sanad.js" defer></script>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="side">
+    <button class="menu-btn side-close" data-toggle="side" aria-label="إغلاق القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <a class="brand" href="index.html"><img src="assets/sanad-mark.svg" alt=""><span>سَنَد<small>SANAD GSM</small></span></a>
+    <nav aria-label="لوحة الزبون"><a class="side-link" href="dashboard.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"/></svg>الرئيسية</a><a class="side-link" href="services.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>طلب جديد</a><a class="side-link" href="dashboard.html#orders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></svg>طلباتي</a><a class="side-link" href="topup.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h15a3 3 0 0 1 3 3v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 7V6a2 2 0 0 1 2-2h11"/></svg>شحن الرصيد</a><a class="side-link" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>كشف الحساب</a><a class="side-link" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>التذاكر</a><a class="side-link" href="#security"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>الأمان</a><a class="side-link" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3"/></svg>API</a></nav>
+    <div class="side-foot"><b>محتاج فني؟</b><span class="muted">واتساب الدعم: 10:00–24:00</span><a class="btn btn-primary btn-sm btn-block mt-8" href="#">احكي معنا</a></div>
+  </aside>
+  <div class="app-main">
+    <header class="topbar">
+      <button class="menu-btn" data-toggle="side" aria-expanded="false" aria-controls="side" aria-label="القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <h1>لوحة التحكم</h1>
+      <div class="topbar-end"><span class="pill ok">الرصيد <bdi class="mono">$248.60</bdi></span><div class="avatar" aria-label="محل النور">ن</div></div>
+    </header>
+    <div class="app-body">
+      <div class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg><span><b>تنبيه خدمة:</b> فك شبكة Xiaomi متوقف مؤقتاً من المصدر. الطلبات المعلقة رح ترجع للرصيد تلقائياً.</span></div>
+      <div class="dash-top">
+        <div class="card bal-card"><small class="muted">رصيدك المتاح</small><div class="balance mono">$248.60</div><div class="bal-actions"><a class="btn btn-primary" href="topup.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>اشحن رصيد</a><a class="btn btn-soft" href="services.html">طلب جديد</a></div></div>
+        <div class="card stat"><small>طلبات هالشهر</small><div class="v">142</div><div class="d">↑ 18% عن الشهر الماضي</div></div>
+        <div class="card stat"><small>مستواك</small><div class="v">Retail</div><div class="d">باقيلك <bdi class="mono">$86</bdi> شحن لمستوى Reseller</div></div>
+      </div>
+      <div class="dash-cols">
+        <section class="card" id="orders">
+          <div class="card-head"><h2>آخر الطلبات</h2>
+            <div class="tabs" role="tablist"><button class="tab" role="tab" aria-selected="true" data-filter="all">الكل</button><button class="tab" role="tab" aria-selected="false" data-filter="wait">قيد التنفيذ</button><button class="tab" role="tab" aria-selected="false" data-filter="ok">تم</button><button class="tab" role="tab" aria-selected="false" data-filter="fail">مرفوض</button></div>
+          </div>
+          <div class="table-wrap"><table class="otable"><thead><tr><th>الخدمة</th><th>رقم الطلب</th><th>السعر</th><th>الحالة</th><th>النتيجة</th></tr></thead><tbody><tr data-status="ok"><td><div class="svc-name"><bdi>UnlockTool · 12 شهر</bdi></div><div class="sub mono">shop.noor@gmail.com</div></td><td class="mono">#SND-10484</td><td><bdi class="mono">$59.00</bdi></td><td><span class="pill ok">تم</span></td><td><span class="faint">—</span></td></tr><tr data-status="wait"><td><div class="svc-name"><bdi>فك شبكة Samsung</bdi></div><div class="sub mono">IMEI 3569…3809</div></td><td class="mono">#SND-10483</td><td><bdi class="mono">$4.20</bdi></td><td><span class="pill wait">قيد التنفيذ</span></td><td><span class="faint">—</span></td></tr><tr data-status="ok"><td><div class="svc-name"><bdi>Chimera Tool · Credits</bdi></div><div class="sub mono">CHM-88412</div></td><td class="mono">#SND-10482</td><td><bdi class="mono">$7.50</bdi></td><td><span class="pill ok">تم</span></td><td><span class="faint">—</span></td></tr><tr data-status="ok"><td><div class="svc-name"><bdi>فحص قبل الشراء</bdi></div><div class="sub mono">IMEI 3528…1190</div></td><td class="mono">#SND-10481</td><td><bdi class="mono">$0.35</bdi></td><td><span class="pill ok">تم</span></td><td><span class="code">CLEAN · T-Mobile US<button class="copy" type="button" data-copy="CLEAN · T-Mobile US">نسخ</button></span></td></tr><tr data-status="ok"><td><div class="svc-name"><bdi>Motorola Unlock</bdi></div><div class="sub mono">IMEI 3591…4472</div></td><td class="mono">#SND-10480</td><td><bdi class="mono">$6.50</bdi></td><td><span class="pill ok">تم</span></td><td><span class="code">73841920<button class="copy" type="button" data-copy="73841920">نسخ</button></span></td></tr><tr data-status="fail"><td><div class="svc-name"><bdi>Network Unlock Xiaomi</bdi></div><div class="sub mono">IMEI 8641…0027</div></td><td class="mono">#SND-10479</td><td><bdi class="mono">$9.00</bdi></td><td><span class="pill fail">مرفوض · تم الاسترجاع</span></td><td><span class="faint">—</span></td></tr></tbody></table></div>
+        </section>
+        <section class="card" id="security">
+          <div class="card-head"><h2>أمان الحساب</h2><span class="pill ok">قوي</span></div>
+          <div class="sec-row"><div><b>التحقق الثنائي (2FA)</b><small>مفعّل · تطبيق التحقق</small></div><span class="pill ok">مفعّل</span></div>
+          <div class="sec-row"><div><b>Passkey</b><small>iPhone 15 · أُضيف قبل 12 يوم</small></div><a class="btn btn-soft btn-sm" href="#">إدارة</a></div>
+          <div class="sec-row"><div><b>الجلسات النشطة</b><small>جهازين · آخر دخول: Ramallah</small></div><a class="btn btn-soft btn-sm" href="#">اقفل الباقي</a></div>
+          <div class="sec-row"><div><b>مفتاح API</b><small class="mono">snd_live_••••••••3f9a</small><small> · مقيّد بـ 2 IP</small></div><a class="btn btn-soft btn-sm" href="#">تدوير</a></div>
+          <div class="sec-row"><div><b>إشعار كل دخول وسحب</b><small>واتساب + إيميل</small></div><span class="pill ok">مفعّل</span></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

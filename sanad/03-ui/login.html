@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>دخول | سَنَد</title>
+<meta name="description" content="سيرفر GSM لفنيي الصيانة: كريدت أدوات، تفعيلات، فك شبكة وفحوصات IMEI، مع دعم فني عربي على الواتساب واسترجاع تلقائي للطلبات المرفوضة.">
+<link rel="icon" href="assets/sanad-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/sanad.css">
+<script src="assets/sanad.js" defer></script>
+</head>
+<body>
+<div class="auth-wrap">
+  <main class="auth-main">
+    <div class="auth-card">
+      <a class="brand" href="index.html"><img src="assets/sanad-mark.svg" alt=""><span>سَنَد<small>SANAD GSM</small></span></a>
+
+      <section id="step-login">
+        <h1>أهلاً فيك من جديد</h1>
+        <p class="sub">ادخل على حساب محلك.</p>
+        <button class="btn btn-soft btn-block btn-lg" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 11v3a8 8 0 0 1-1.5 4.5M8 10a4 4 0 0 1 8 0v2M5 9a7 7 0 0 1 14 1v2M16 15a12 12 0 0 1-1 4"/></svg>دخول بالـ Passkey (بصمة الجهاز)</button>
+        <div class="divider">أو</div>
+        <form id="login-form" action="#" method="post" autocomplete="on">
+          <div class="field"><label for="email">الإيميل</label><input class="input ltr" id="email" name="email" type="email" autocomplete="username" required maxlength="190" inputmode="email"></div>
+          <div class="field"><label for="pw">كلمة السر</label><input class="input ltr" id="pw" name="password" type="password" autocomplete="current-password" required minlength="12" maxlength="128"><a class="hint mint" href="#">نسيت كلمة السر؟</a></div>
+          <button class="btn btn-primary btn-block btn-lg" type="submit">دخول</button>
+        </form>
+        <p class="muted mt-24">ما عندك حساب؟ <a class="mint" href="#">افتح حساب مجاني</a></p>
+      </section>
+
+      <section id="step-2fa" hidden>
+        <h1>التحقق الثنائي</h1>
+        <p class="sub">دخّل الرمز المكوّن من 6 أرقام من تطبيق التحقق (Google Authenticator أو غيره).</p>
+        <form action="#" method="post" autocomplete="off">
+          <fieldset class="otp" aria-label="رمز التحقق">
+            <input inputmode="numeric" maxlength="1" aria-label="رقم 1" autocomplete="one-time-code"><input inputmode="numeric" maxlength="1" aria-label="رقم 2"><input inputmode="numeric" maxlength="1" aria-label="رقم 3"><input inputmode="numeric" maxlength="1" aria-label="رقم 4"><input inputmode="numeric" maxlength="1" aria-label="رقم 5"><input inputmode="numeric" maxlength="1" aria-label="رقم 6">
+          </fieldset>
+          <label class="check"><input type="checkbox" name="trust">ثق بهاد الجهاز لمدة 30 يوم</label>
+          <a class="btn btn-primary btn-block btn-lg mt-16" href="dashboard.html">تحقق وادخل</a>
+        </form>
+        <p class="muted mt-24">فقدت جهازك؟ <a class="mint" href="#">استخدم رمز احتياطي</a></p>
+      </section>
+
+      <div class="secure-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>اتصال مشفّر · بنبلغك فوراً عن أي دخول من جهاز جديد</div>
+    </div>
+  </main>
+  <aside class="auth-side">
+    <div class="quote">
+      <span class="kicker">سَنَد</span>
+      <h2>رصيدك فلوس حقيقية، وبنحميه على هالأساس.</h2>
+      <p class="muted">تحقق ثنائي، و Passkeys، ودفتر حسابات ما بينمسح، وإشعار فوري على كل عملية حساسة.</p>
+      <div class="stack mt-24" aria-hidden="true">
+        <div class="toast"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><div><b>دخول جديد من Chrome · Ramallah</b><small>إذا مش إنت، اقفل كل الجلسات بضغطة</small></div></div>
+      </div>
+    </div>
+  </aside>
+</div>
+</body>
+</html>

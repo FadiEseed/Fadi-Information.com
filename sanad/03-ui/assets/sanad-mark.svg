@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Sanad mark</title>
+  <defs>
+    <linearGradient id="sanadTile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A222D"/>
+      <stop offset="1" stop-color="#0A0E13"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#sanadTile)"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="15.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <!-- Three teeth of "س" that double as signal bars, joined by one base -->
+  <g fill="#34E0A1">
+    <rect x="16" y="34" width="8" height="14" rx="4"/>
+    <rect x="28" y="26" width="8" height="22" rx="4"/>
+    <rect x="40" y="16" width="8" height="32" rx="4"/>
+    <rect x="16" y="40" width="32" height="8" rx="4"/>
+  </g>
+</svg>
