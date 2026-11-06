@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sanad Brand Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A0E13; --graphite:#121821; --raise:#19212C; --line:#232D3A;
+  --text:#EEF2F6; --muted:#8A97A8;
+  --mint:#34E0A1; --mint-deep:#0FA678; --mint-soft:rgba(52,224,161,.12);
+  --sand:#EDE8DE; --amber:#FFB547; --red:#FF5D5D; --blue:#5AA9FF;
+  --f-head:'Readex Pro','IBM Plex Sans Arabic',system-ui,sans-serif;
+  --f-body:'IBM Plex Sans Arabic','Readex Pro',system-ui,sans-serif;
+  --f-mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);font-family:var(--f-body);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:56px 24px 96px}
+.eyebrow{font-family:var(--f-head);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mint);margin-bottom:14px}
+h1,h2,h3{font-family:var(--f-head);line-height:1.25}
+h2{font-size:26px;font-weight:600;margin-bottom:22px}
+section{margin-top:72px}
+.card{background:var(--graphite);border:1px solid var(--line);border-radius:20px;padding:28px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(2,1fr)} .g3{grid-template-columns:repeat(3,1fr)} .g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:760px){.wrap{padding:32px 16px 72px}.card{padding:20px}.lockup .w1{font-size:34px}.g2,.g3,.g4{grid-template-columns:1fr}.hero{padding:40px 24px!important}.hero h1{font-size:38px!important}}
+.muted{color:var(--muted)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;border-radius:28px;padding:72px 56px;border:1px solid var(--line);
+  background:radial-gradient(900px 400px at 85% -10%,rgba(52,224,161,.16),transparent 60%),linear-gradient(180deg,var(--graphite),var(--ink))}
+.lockup{display:flex;align-items:center;gap:20px;margin-bottom:40px}
+.lockup img{width:76px;height:76px}
+.lockup .w1{font-family:var(--f-head);font-weight:700;font-size:44px;line-height:1}
+.lockup .w2{font-family:var(--f-head);font-size:13px;letter-spacing:.42em;color:var(--muted);margin-top:8px;direction:ltr;text-align:right}
+.hero h1{font-size:54px;font-weight:700;max-width:760px}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p{font-size:19px;color:var(--muted);max-width:620px;margin-top:16px}
+.hero .en{direction:ltr;text-align:right;font-family:var(--f-head);font-size:15px;color:var(--muted);margin-top:24px;letter-spacing:.02em}
+
+/* mark concept */
+.concept{display:flex;gap:28px;align-items:center}
+.concept svg{flex:none}
+@media(max-width:760px){.concept{flex-direction:column;align-items:flex-start}}
+
+/* swatches */
+.sw{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--graphite)}
+.sw .chip{height:110px}
+.sw .meta{padding:14px 16px}
+.sw .meta b{font-family:var(--f-head);font-weight:600;display:block}
+.sw .meta code{font-family:var(--f-mono);font-size:12px;color:var(--muted);direction:ltr;display:inline-block}
+
+/* type */
+.type-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.type-row:last-child{border-bottom:0}
+.type-row small{color:var(--muted);font-size:13px}
+
+/* ui sample */
+.order{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:14px;background:var(--raise)}
+.order + .order{margin-top:10px}
+.order .t{font-family:var(--f-head);font-weight:500}
+.order .s{font-family:var(--f-mono);font-size:12px;color:var(--muted);direction:ltr}
+.pill{font-size:12px;font-weight:600;padding:5px 12px;border-radius:999px;white-space:nowrap}
+.ok{background:rgba(52,224,161,.14);color:var(--mint)}
+.wait{background:rgba(255,181,71,.14);color:var(--amber)}
+.fail{background:rgba(255,93,93,.14);color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-head);font-weight:600;border-radius:12px;padding:13px 22px;font-size:15px;border:0}
+.btn-p{background:var(--mint);color:#04140D}
+.btn-g{background:transparent;color:var(--text);border:1px solid var(--line)}
+
+/* voice */
+ul.clean{list-style:none}
+ul.clean li{padding:10px 0;border-bottom:1px dashed var(--line)}
+ul.clean li:last-child{border:0}
+.do li::before{content:"✓  ";color:var(--mint);font-weight:700}
+.dont li::before{content:"✕  ";color:var(--red);font-weight:700}
+
+/* domains */
+table{width:100%;border-collapse:collapse}
+td,th{padding:14px 10px;border-bottom:1px solid var(--line);text-align:right;font-size:15px}
+th{font-family:var(--f-head);font-weight:500;color:var(--muted);font-size:13px}
+td.d{font-family:var(--f-mono);direction:ltr;text-align:right;word-break:break-all}
+.tag{font-size:11px;padding:3px 9px;border-radius:999px;background:var(--mint-soft);color:var(--mint);margin-inline-start:8px}
+footer{margin-top:80px;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="lockup">
+      <img src="sanad-mark.svg" alt="">
+      <div><div class="w1">سَنَد</div><div class="w2">SANAD GSM</div></div>
+    </div>
+    <h1>سيرفر <em>بيرد عليك.</em></h1>
+    <p>كريدت وتفعيلات وفك شبكة بثواني، ووراك فني حقيقي على الواتساب، مش تذكرة بتستنى يومين.</p>
+    <div class="en">The GSM server that actually answers.</div>
+  </div>
+
+  <section>
+    <div class="eyebrow">01 — الشعار</div>
+    <h2>فكرة الرمز</h2>
+    <div class="card concept">
+      <svg width="140" height="140" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="16" fill="#19212C"/>
+        <g fill="#34E0A1"><rect x="16" y="34" width="8" height="14" rx="4"/><rect x="28" y="26" width="8" height="22" rx="4"/><rect x="40" y="16" width="8" height="32" rx="4"/><rect x="16" y="40" width="32" height="8" rx="4"/></g>
+      </svg>
+      <div>
+        <h3 style="font-size:20px;margin-bottom:8px">أسنان حرف «س» = أعمدة الشبكة</h3>
+        <p class="muted">ثلاث أسنان حرف السين من «سَنَد» بتطلع لفوق متل إشارة الشبكة، وقاعدة وحدة بتجمعهم، وهاي فكرة السند. الرمز عربي وتقني بنفس الوقت، وبيضل واضح حتى بحجم 16px كأيقونة للمتصفح أو بروفايل للواتساب.</p>
+      </div>
+    </div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="card" style="display:flex;align-items:center;justify-content:center;background:var(--ink)"><img src="sanad-mark.svg" width="64" alt=""></div>
+      <div class="card" style="display:flex;align-items:center;justify-content:center;background:var(--sand)">
+        <svg width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#0A0E13"/><g fill="#34E0A1"><rect x="16" y="34" width="8" height="14" rx="4"/><rect x="28" y="26" width="8" height="22" rx="4"/><rect x="40" y="16" width="8" height="32" rx="4"/><rect x="16" y="40" width="32" height="8" rx="4"/></g></svg>
+      </div>
+      <div class="card" style="display:flex;align-items:center;justify-content:center;background:var(--mint)">
+        <svg width="64" height="64" viewBox="0 0 64 64"><g fill="#04140D"><rect x="16" y="34" width="8" height="14" rx="4"/><rect x="28" y="26" width="8" height="22" rx="4"/><rect x="40" y="16" width="8" height="32" rx="4"/><rect x="16" y="40" width="32" height="8" rx="4"/></g></svg>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">02 — الألوان</div>
+    <h2>لوحة الألوان</h2>
+    <div class="grid g4">
+      <div class="sw"><div class="chip" style="background:#0A0E13"></div><div class="meta"><b>Ink</b><code>#0A0E13</code><div class="muted" style="font-size:13px">الخلفية الأساسية</div></div></div>
+      <div class="sw"><div class="chip" style="background:#121821"></div><div class="meta"><b>Graphite</b><code>#121821</code><div class="muted" style="font-size:13px">الكروت والأسطح</div></div></div>
+      <div class="sw"><div class="chip" style="background:#34E0A1"></div><div class="meta"><b>Sanad Mint</b><code>#34E0A1</code><div class="muted" style="font-size:13px">الأزرار والنجاح، استخدمه بقلة</div></div></div>
+      <div class="sw"><div class="chip" style="background:#EDE8DE"></div><div class="meta"><b>Sand</b><code>#EDE8DE</code><div class="muted" style="font-size:13px">الوضع الفاتح والمطبوعات</div></div></div>
+    </div>
+    <div class="grid g3" style="margin-top:16px">
+      <div class="sw"><div class="chip" style="background:#FFB547;height:56px"></div><div class="meta"><b>Pending</b> <code>#FFB547</code></div></div>
+      <div class="sw"><div class="chip" style="background:#FF5D5D;height:56px"></div><div class="meta"><b>Rejected / Refund</b> <code>#FF5D5D</code></div></div>
+      <div class="sw"><div class="chip" style="background:#5AA9FF;height:56px"></div><div class="meta"><b>Info</b> <code>#5AA9FF</code></div></div>
+    </div>
+    <p class="muted" style="margin-top:14px">ليش أخضر نعناعي؟ معظم سيرفرات الـ GSM لونها أحمر أو أزرق أو برتقالي صارخ. الأخضر الهادي على الأسود بيعطي إحساس fintech نظيف وبيوحي بـ «تم بنجاح»، وهاد أهم شعور بدنا الزبون يحسه.</p>
+  </section>
+
+  <section>
+    <div class="eyebrow">03 — الخطوط</div>
+    <h2>الطباعة</h2>
+    <div class="card">
+      <div class="type-row"><span style="font-family:var(--f-head);font-weight:700;font-size:40px">تفعيل UnlockTool بدقيقة</span><small>Readex Pro · 700 · عناوين</small></div>
+      <div class="type-row"><span style="font-family:var(--f-head);font-weight:500;font-size:22px"><bdi>Chimera Tool</bdi> · 12 شهر</span><small>Readex Pro · 500 · أسماء الخدمات</small></div>
+      <div class="type-row"><span style="font-size:17px">بيوصلك الكريدت على حسابك فوراً بعد ما يتأكد الدفع، وإذا فشل الطلب بيرجعلك رصيدك تلقائياً.</span><small>IBM Plex Sans Arabic · نصوص</small></div>
+      <div class="type-row"><span style="font-family:var(--f-mono);font-size:17px;direction:ltr">IMEI 356938035643809 · $12.40</span><small>JetBrains Mono · أرقام وIMEI</small></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">04 — شكل الواجهة</div>
+    <h2>عيّنة من لوحة الزبون</h2>
+    <div class="grid g2">
+      <div class="card">
+        <div class="order"><div><div class="t"><bdi>UnlockTool</bdi> · 3 أشهر</div><div class="s">#SND-10482 · $18.50</div></div><span class="pill ok">تم التسليم</span></div>
+        <div class="order"><div><div class="t"><bdi>Samsung FRP · Server</bdi></div><div class="s">#SND-10483 · $4.20</div></div><span class="pill wait">قيد التنفيذ</span></div>
+        <div class="order"><div><div class="t">فك شبكة <bdi>Xiaomi</bdi></div><div class="s">#SND-10479 · $9.00</div></div><span class="pill fail">مرفوض · تم الاسترجاع</span></div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;justify-content:space-between;gap:20px">
+        <div>
+          <div class="muted" style="font-size:14px">رصيدك</div>
+          <div style="font-family:var(--f-mono);font-size:44px;direction:ltr;text-align:right">$248.60</div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn btn-p">اشحن رصيد</button>
+          <button class="btn btn-g">كلّم الدعم على الواتساب</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">05 — نبرة الكلام</div>
+    <h2>كيف بيحكي سَنَد</h2>
+    <div class="grid g2">
+      <div class="card"><h3 style="margin-bottom:10px">هيك</h3>
+        <ul class="clean do">
+          <li>«طلبك فشل؟ رصيدك رجع تلقائياً، ولو بدك نشوفه معك احكينا.»</li>
+          <li>جمل قصيرة، أرقام واضحة، وقت تسليم حقيقي.</li>
+          <li>نحكي فني لفني، والمصطلحات زي ما هي: FRP، EDL، Credits.</li>
+        </ul></div>
+      <div class="card"><h3 style="margin-bottom:10px">مش هيك</h3>
+        <ul class="clean dont">
+          <li>«أقوى سيرفر بالعالم!!! 🔥🔥 أرخص الأسعار!!!»</li>
+          <li>وعود «100% ضمان» على خدمات بتعتمد على المورد.</li>
+          <li>بانرات مزدحمة وعشرين لون بنفس الصفحة.</li>
+        </ul></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">06 — الدومين</div>
+    <h2>الدومينات المقترحة (افحصها واحجز أول متاح)</h2>
+    <div class="card" style="padding:8px 20px">
+      <table>
+        <tr><th>الدومين</th><th>ليش</th></tr>
+        <tr><td class="d">sanadgsm.com <span class="tag">الأول</span></td><td>واضح، فيه كلمة GSM للبحث، وبيتهجى سهل</td></tr>
+        <tr><td class="d">sanad-gsm.com</td><td>بديل مباشر إذا الأول مأخوذ</td></tr>
+        <tr><td class="d">sanadserver.com</td><td>نفس منطق اسم السيرفرات اللي متعود عليه السوق</td></tr>
+        <tr><td class="d">getsanad.com</td><td>شكل SaaS حديث</td></tr>
+        <tr><td class="d">sanad.tools</td><td>قصير ومميز، بس امتداد غير مألوف للمحلات</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <footer>Sanad GSM · Brand Board v1</footer>
+</div>
+</body>
+</html>
